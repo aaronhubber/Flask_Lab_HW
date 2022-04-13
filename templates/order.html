@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - PokeMart</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li clas="navLink"><a href="/orders">Orders</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <h1>{{order.description}}'s Potions</h1>
+  
+      <div class="order-container">
+  
+          <div class="order">
+              <h2>{{ order.customer_name }}</h2>
+              <h3>{{ order.description }}</h3>
+              <h4>When: {{ order.order_date.strftime("%b %d %Y") }}</h4>
+              <h5>Quantity: {{ order.quantity }}</h5>
+          </div>
+      </div>
+</body>
+</html>
